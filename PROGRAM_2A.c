@@ -16,7 +16,7 @@ int main(void)
     if(pid < 0)//failure of fork() scenario
     {
         perror("fork system call has failed.\n");
-        exit(0);
+        exit(1);
     }
     else if(pid == 0)//Child Process
     {
