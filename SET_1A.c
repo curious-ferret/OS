@@ -12,7 +12,7 @@ int main(int argc, char * argv[])
 
     if(argc != 3)
     {
-        printf("Usage: ./a.exe sourcefile destinationfile.\n");
+        printf("Usage: ./a.out sourcefile destinationfile.\n");
         exit(1);
     }
 
