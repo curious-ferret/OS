@@ -1,3 +1,4 @@
+//b). Program for demonstrating multiple thread operations using PTHREAD library. (pthread_create, pthread_join)
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>

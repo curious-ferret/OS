@@ -1,3 +1,4 @@
+//b). Program to simulate CPU scheduling algorithm for Shortest Job First scheduling.
 #include <stdio.h>
 #include <stdlib.h>
 

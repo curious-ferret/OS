@@ -1,4 +1,4 @@
-//FCFS
+//a). Program to simulate CPU scheduling algorithm for FCFS scheduling.
 #include <stdio.h>
 #include <stdlib.h>
 

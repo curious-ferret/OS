@@ -1,3 +1,4 @@
+//a). Program for demonstrating creation and manipulation of thread using PTHREAD library (pthread_create, pthread_join)
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
