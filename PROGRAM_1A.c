@@ -1,3 +1,4 @@
+//a). Program to demonstrate the usage of file related system calls. (open, creat, close read, write).(Program to copy contents of one file to another using system calls. Also display the contents of the copied file on screen).
 #include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
