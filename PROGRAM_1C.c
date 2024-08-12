@@ -1,3 +1,4 @@
+//c). Program to get the attributes of a file on Linux using stat system call.
 #include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
