@@ -1,3 +1,4 @@
+//b). Program to reposition the file offset on Linux using lseek( ) system call.
 #include <fcntl.h>
 #include <stdio.h>
 #include <unistd.h>
