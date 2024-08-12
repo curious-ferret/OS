@@ -24,12 +24,6 @@ int main(int argc, char * argv[])
     }
 
     fd2 = open(argv[2], O_WRONLY| O_CREAT, 0644);
-    if(fd2 < 0)
-    {
-        perror("error in opening destination file.\n");
-        close(fd1);
-        exit(1);
-    }
 
     while ((bytes = read(fd1, buffer, sizeof(buffer))) > 0)
     {
