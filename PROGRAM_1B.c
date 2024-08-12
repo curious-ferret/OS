@@ -19,19 +19,19 @@ int main(void)
     printf("\n");
 
     //SEEK CURSOR
-    lseek(fd, 10, SEEK_CUR);
+    lseek(fd, 3, SEEK_CUR);
     read(fd, buf, 10);
     write(1, buf, 10);
     printf("\n");
 
     //SEEK SET
-    lseek(fd, 10, SEEK_SET);
+    lseek(fd, 15, SEEK_SET);
     read(fd, buf, 10);
     write(1, buf, 10);
     printf("\n");
 
     //SEEK END
-    lseek(fd, 10, SEEK_END);
+    lseek(fd, -10, SEEK_END);
     read(fd, buf, 10);
     write(1, buf, 10);
     printf("\n");
