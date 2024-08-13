@@ -6,7 +6,7 @@
 int main(void)
 {
     int fd;
-    fd = open("seek.txt", O_RDWR);
+    fd = open("seek.txt", O_RDONLY);
     if (fd < 0)
     {
         perror("file seek.txt failed to open.\n");
