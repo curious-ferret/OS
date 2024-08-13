@@ -26,21 +26,13 @@ int main(int argc, char * argv[])
     fd2 = open(argv[2], O_WRONLY| O_CREAT, 0644);
 
     while ((bytes = read(fd1, buffer, 1)) > 0)
-    {
-        if (write(fd2, buffer, bytes) != bytes)
-        {
-            perror("error while writing to destination file.\n");
-            close(fd1);
-            close(fd2);
-            exit(1);
-        }
-    }
+        write(fd2, buffer, bytes);
     close(fd1);
     close(fd2);
 
     fd2 = open(argv[2], O_RDONLY);
     printf("Contents of the destination file: \n");
-	while((bytes = read(fd2, buffer, sizeof(buffer))) > 0)
+	while((bytes = read(fd2, buffer, 1)) > 0)
     {
 		write(1, buffer, bytes);
 	}
