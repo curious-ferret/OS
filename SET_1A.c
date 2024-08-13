@@ -33,10 +33,9 @@ int main(int argc, char * argv[])
     fd2 = open(argv[2], O_RDONLY);
     printf("Contents of the destination file: \n");
 	while((bytes = read(fd2, buffer, 1)) > 0)
-    {
 		write(1, buffer, bytes);
-	}
 	close(fd2);
     printf("\n");
+    
     return 0;
 }
