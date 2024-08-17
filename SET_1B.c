@@ -1,4 +1,4 @@
-//Un-named pipes
+//Using un-named pipes to implement two-process communication through Echo server application
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
