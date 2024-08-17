@@ -1,3 +1,5 @@
+// FIFO Page replacement Algorithm
+
 #include<stdio.h> 
 #include<stdlib.h> 
 
