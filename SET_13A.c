@@ -2,8 +2,14 @@
 #include<stdio.h> 
 #include<stdlib.h> 
 #include<limits.h> 
+
 int main(void)
 {
+    //hdpos: head position
+    //tseek: seek time
+    //min: minimum seek distance
+    //dist: distance between cpos and req
+    //index: stores index of request closest to cpos (i.e., the one with the minimum dist)
     int req[20], n, hdpos, tseek = 0, i, temp[20], min, dist, index, cpos, cnt = 0; 
     float avgmv;
     system("clear");
