@@ -85,7 +85,7 @@ int main(void)
             printf("%d\t", avail[j]);
 
         //printing out the max, allocated and need matrices
-        printf("\n\n\tMAX MATRIX:\t\tALLOCATION MATRIX:\t\tNEED MATRIX\n"); 
+        printf("\n\n   MAX MATRIX:\t\t\tALLOCATION MATRIX:\t\t  NEED MATRIX:\n"); 
         for (i = 0; i < pr_cnt; i++)
         {
             for (j = 0; j < res_cnt; j++)
@@ -141,12 +141,31 @@ int main(void)
     // checking if system is in safe state
     if(count == pr_cnt)
     {
-        printf("the system is in a safe state\n"); 
+        printf("\nThe system is in a safe state.\n"); 
         printf("Safe sequence:< "); 
         for (i = 0; i < pr_cnt; i++)
             printf("%d ", safe[i]); 
         printf(">\n");
     }
     else
-        printf("the system is in unsafe state!!\n");
+        printf("The system is in unsafe state!!\n");
 }
+
+//Example Input:
+//
+//processes = 5
+//resources = 3
+//
+//    MAX MATRIX    ALLOC MATRIX
+//      7 5 3          0 1 0
+//      3 2 2          2 0 0
+//      9 0 2          3 0 2
+//      2 2 2          2 1 1
+//      4 3 3          0 0 2
+//
+// available resources = 3 3 2
+                
+                
+                
+                
+
