@@ -2,6 +2,7 @@
 #include<stdio.h> 
 #include<stdlib.h> 
 #include<limits.h> 
+
 int main(void)
 {
     int req[20], n, hdpos, tseek = 0, i, temp[20], min, dist, index, cpos, cnt = 0; 
