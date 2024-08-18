@@ -1,3 +1,5 @@
+//Least Recently Used Page Replacement Algorithm
+
 #include<stdio.h> 
 #include<stdlib.h> 
 
