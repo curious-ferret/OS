@@ -63,8 +63,6 @@ void consumer()
     printf("Consumer consumes item number: %d.\n", full);
     full = wait(full);
     mutex = signal(mutex);
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 5225172a92c92f40f9e818ca17e6d1820b278af8
+
+
