@@ -64,3 +64,5 @@ void consumer()
     full = wait(full);
     mutex = signal(mutex);
 }
+
+
