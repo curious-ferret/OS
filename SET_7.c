@@ -5,7 +5,7 @@
 
 int main(void)
 {
-    int i, n, bt[15], wt[15], tat[15], rt[15], temp = 0, Twt = 0, Ttat = 0, count = 0, ts;
+    int i, n, bt[15], wt[15], tat[15], rt[15], time = 0, Twt = 0, Ttat = 0, count = 0, ts;
     float avgWt, avgTat;
     system("clear");
 
@@ -31,32 +31,34 @@ int main(void)
                 if (rt[i] > ts)
                 {
                     rt[i] -= ts;
-                    temp += ts;
+                    time += ts;
                 }
                 else
                 {
-                    temp += rt[i];
-                    tat[i] = temp;
+                    time += rt[i];
+                    tat[i] = time;
+                    Ttat += tat[i];
+
                     wt[i] = tat[i] - bt[i];
-                    rt[i] = 0;
                     Twt += wt[i];
+
+                    rt[i] = 0;
                     count++;
                 }
             }
         }
     }
 
-    for (i = 0; i < n; i++)
-        Ttat += tat[i];
-
     avgWt = (float)Twt / n;
     avgTat = (float)Ttat / n;
 
-    printf("\n P.no\tBT\tWT\tTAT\n");
+    printf("\nP.No\tBT\tWT\tTAT\n");
     for (i = 0; i < n; i++)
     {
         printf("%d\t%d\t%d\t%d\n", i + 1, bt[i], wt[i], tat[i]);
     }
     printf("\nAverage waiting time: %.2f\n", avgWt);
     printf("Average turn-around time: %.2f\n", avgTat);
+
+    return 0;
 }
