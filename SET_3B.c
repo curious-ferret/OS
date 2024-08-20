@@ -16,9 +16,9 @@ int main(void)
     pid = fork();
 
     if (pid == 0)
-        strcpy(p, "Demo of shared memory.\n");
-    else if(pid > 0)
-        printf("%s.\n", p);
+        strcpy(p, "Demo of shared memory");
+    else if (pid > 0)
+        printf("%s\n", p);
     else
         perror("error!\n");
 }
