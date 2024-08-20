@@ -6,7 +6,7 @@
 int main(void)
 {
     int pid;
-    printf("Demonstration of fork system call.\n\n");
+    printf("Demonstration of Orphan Process.\n\n");
 
     pid = fork();
     if(pid < 0)//failure of fork() scenario
