@@ -46,19 +46,17 @@ int main(void)
         }
     }
 
-    Ttat = temp;
-
     for (i = 0; i < n; i++)
-    {
-        wt[i] = tat[i] - bt[i];
         Ttat += tat[i];
-    }
+
     avgWt = (float)Twt / n;
     avgTat = (float)Ttat / n;
 
     printf("\n P.no\tBT\tWT\tTAT\n");
     for (i = 0; i < n; i++)
+    {
         printf("%d\t%d\t%d\t%d\n", i + 1, bt[i], wt[i], tat[i]);
+    }
     printf("\nAverage waiting time: %.2f\n", avgWt);
     printf("Average turn-around time: %.2f\n", avgTat);
 }
