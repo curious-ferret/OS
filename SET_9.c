@@ -5,10 +5,8 @@
 
 int main(void)
 {
-    int i, j, n, rs[50], f[10], nf, k=0, avail, pf=0;
+    int i, j, n, rs[50], f[10], nf, k = 0, avail, pf = 0;
     float hr, mr;
-
-    // Clear the screen
     system("clear");
 
     //n: number of pages
@@ -16,9 +14,9 @@ int main(void)
     scanf("%d", &n);
 
     //rs: reference string
-    for (i = 1; i <= n; i++)
+    for (i = 0; i < n; i++)
     {
-        printf("Enter reference string %d: ", i); 
+        printf("Enter reference string %d: ", i + 1); 
         scanf("%d", &rs[i]);
     }
 
@@ -32,7 +30,7 @@ int main(void)
         f[i] = -1;
 
     printf("page frames:\n"); 
-    for (i = 1; i <= n; i++)
+    for (i = 0; i < n; i++)
     {
         avail = 0; 
         for (j = 0; j < nf; j++)
@@ -53,9 +51,9 @@ int main(void)
     }
     printf("Total Page Faults: %d\n", pf); 
     mr = (float) pf / n;
-    hr = 1 - mr;
+    hr = (float)(n - pf) / n;
     //you can also use 
-    //hr = (float)(n - pf) / n;
+    //hr = 1 - mr;
     printf("Hit Ratio: %.2f, Miss Ratio: %.2f\n", hr, mr);
 
     return 0;
