@@ -29,7 +29,8 @@ int main(void)
         Ttat += tat[i];
     }
 
-    avgWt = Twt * 1.0 / n;
+    //either of the below two methods could be used to convert the int values to float values for an accurate answer
+    avgWt = (float) Twt / n;
     avgTat = Ttat * 1.0 / n;
 
     //printing out the final answer in the form of matrix
