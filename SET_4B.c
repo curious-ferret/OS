@@ -25,7 +25,6 @@ int main(void)
         printf("Child id is %d.\n", getpid());
         printf("Parent id is %d.\n\n", getppid());
     }
-
     else//Parent Process
     {
         //you can include the below sleep function if you want to view the child process first
