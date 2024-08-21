@@ -123,9 +123,8 @@ int main(void)
         // If a process is found
         if (process != -1)
         {
-            safe[count] = process + 1; 
-            count++; 
-
+            safe[count++] = process + 1; 
+            
             // Allocate resources and mark process as finished
             for (j = 0; j < res_cnt; j++)
             {
