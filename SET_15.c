@@ -144,7 +144,7 @@ int main(void)
         printf("\nThe system is in a safe state.\n"); 
         printf("Safe sequence:< "); 
         for (i = 0; i < pr_cnt; i++)
-            printf("%d ", safe[i]); 
+            printf("P%d ", safe[i]); 
         printf(">\n");
     }
     else
