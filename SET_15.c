@@ -37,7 +37,7 @@ int main(void)
     scanf("%d", &res_cnt);
 
     // Input: Maximum resources for each process
-    printf("\nEnter the max matrix for all processes: \n"); 
+    printf("\nEnter the max matrix info for all processes: \n"); 
     for (i = 0; i < pr_cnt; i++)
     {
         for(j = 0; j < res_cnt; j++)
@@ -47,9 +47,9 @@ int main(void)
         }
         printf("\n");
     }
-    printf("\n");
 
     // Input: Allocated resources for each process
+    printf("\nEnter the allocated matrix info for all processes: \n"); 
     for (i = 0; i < pr_cnt; i++)
     {
         for (j = 0; j < res_cnt; j++)
@@ -90,13 +90,13 @@ int main(void)
         {
             for (j = 0; j < res_cnt; j++)
                 printf("%d\t", max[i][j]);
-        printf("\t"); 
+            printf("\t"); 
             for (j = 0; j < res_cnt; j++)
                 printf("%d\t", alloc[i][j]);
-        printf("\t"); 
+            printf("\t"); 
             for (j = 0; j < res_cnt; j++)
                 printf("%d\t", need[i][j]);
-        printf("\n");
+            printf("\n");
         }
 
         process = -1; 
@@ -130,7 +130,7 @@ int main(void)
             for (j = 0; j < res_cnt; j++)
             {
                 avail[j] += alloc[process][j]; 
-                need [process][j] = 0;
+                need[process][j] = 0;
                 alloc[process][j] = 0; 
                 max[process][j] = 0; 
                 fin[process] = 1;
