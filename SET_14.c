@@ -63,10 +63,12 @@ int main(void) {
     sem_init(&mutex, 0, 1); 
     for (i = 0; i < N; i++)
         sem_init(&s[i], 0, 0); 
+    
     for (i = 0; i < N; i++) {
         pthread_create(&tid[i], NULL, philosopher, &phil[i]); 
         printf("phil %d is thinking\n", phil[i] + 1);
     }
+    
     for(i = 0; i < N; i++)
         pthread_join(tid[i], NULL);
     
